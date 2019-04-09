@@ -36,18 +36,16 @@ In the left-hand geoserver menu, find `Demos` near the bottom. In the page that 
 
 
 In the drop-down menu, find `WMS_getCapabilities.url`.
-![image16.png](image16.png)
+![image16.png](screenshots/image16.png)
 
 Note the URL. 
 #### Q1: What is the URL of the WMS GetCapabilities request?
 
 You’ll need this. Click Submit. Look at the result. Hard to read, right? Copy the URL and paste it into another window in your browser. 
 
-![image16.png](screenshots/image16.png)
+![image21.png](screenshots/image21.png)
 
 Notice this an XML file. This the `contract` that the WMS service uses to tell clients what its capabilities are. This includes what data is provides, what projections it supports, what data formats it outputs, etc. The format of this XML document is outlines in the OGC doc: https://portal.opengeospatial.org/files/?artifact_id=38867. There is a `getCapabilities` request for all the OGC services, including WFS and WCS.
-
-![image21.png](screenshots/image21.png)
 
 Since this is a standard way of conveying to clients the data and services an OGC-compliant service provides, it is no surprise that QGIS can read this natively. 
 
