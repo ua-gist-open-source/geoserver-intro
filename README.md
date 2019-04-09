@@ -36,7 +36,7 @@ In the left-hand geoserver menu, find `Demos` near the bottom. In the page that 
 
 
 In the drop-down menu, find `WMS_getCapabilities.url`.
-![image1.png](image1.png)
+![image16.png](image16.png)
 
 Note the URL. 
 #### Q1: What is the URL of the WMS GetCapabilities request?
