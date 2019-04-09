@@ -4,6 +4,10 @@
 
 ## Assignment
 
+1) Read the background material
+2) Answer the questions by adding your responses to [QUESTIONS.md](QUESTIONS.md) in a branch named `geoserver`
+3) Submit a Pull Request containing your updated `QUESTIONS.md` and send a Slack message to your instructor
+
 ### Obective: Install Geoserver and Become Familiar with its Web Administration GUI
 
 #### Background Reading
