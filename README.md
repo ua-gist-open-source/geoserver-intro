@@ -20,7 +20,6 @@
 - [SLD](https://en.wikipedia.org/wiki/Styled_Layer_Descriptor)
 
 ##### Geoserver Docs
-- [Installation](https://docs.geoserver.org/stable/en/user/index.html#installation)
 - [Web administration interface]https://docs.geoserver.org/stable/en/user/index.html#web-admin)
 - [Data management](https://docs.geoserver.org/stable/en/user/index.html#data)
 - [Styling](https://docs.geoserver.org/stable/en/user/index.html#styling)
@@ -30,6 +29,13 @@
 ### Instructions
 #### Connecting to geoserver with WMS
 To get a jump start on using geoserver, it will be helpful to peek under the hood at the OGC requests that are the heart of all interactions between geoserver and clients. By clients, these usually refer to desktop GIS users using QGIS or ArcMap or, more frequently, server or client-side programs that are rendering maps for clients of their own. 
+
+Start up your geoserver docker container, sharing on port 8080. You will need to make sure docker is running and the `kartoza/geoserver-2.15.2` container is running as in the previous lab. In the docs, the command is listed as:
+
+```
+docker run -v $HOME/geoserver-data:/opt/geoserver/data_dir -p 8080:8080 kartoza/geoserver:2.15.2
+```
+but your exact location of the the `data directory` may differ. If you get a message like `docker: Error response from daemon: Conflict. The container name "/geoserver" is already in use by container` then you likely already have it running.
 
 
 In the left-hand geoserver menu, find `Demos` near the bottom. In the page that comes up, a number OGC demo requests are available for viewing and interacting with. We just want the WMS GetCapabilities to start with. 
