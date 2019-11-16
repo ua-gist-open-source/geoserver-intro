@@ -1,14 +1,18 @@
-# Assignment: Geoserver I
-## Worth: 40 points
-## Due: Monday, April 15, 11:59pm
+# Introduction to GeoServer
+## Prerequisites
+- Geoserver 2.15 or later is installed as per [Geoserver Installation Instructions](install.md)
+
+## Deliverables
+Create a new branch named `geoserver` and submit a `pull request` to merge with master. Your branch should contain edits to this file:
+- `QUESTIONS.md`
 
 ## Assignment
 
 1) Read the background material
 2) Answer the questions by adding your responses to [QUESTIONS.md](QUESTIONS.md) in a branch named `geoserver`
-3) Submit a Pull Request containing your updated `QUESTIONS.md` and send a Slack message to your instructor
+3) Submit a Pull Request containing your updated `QUESTIONS.md`
 
-### Obective: Install Geoserver and Become Familiar with its Web Administration GUI
+### Obective: Become Familiar with its Web Administration GUI
 
 #### Background Reading
 
@@ -30,16 +34,7 @@
 #### Connecting to geoserver with WMS
 To get a jump start on using geoserver, it will be helpful to peek under the hood at the OGC requests that are the heart of all interactions between geoserver and clients. By clients, these usually refer to desktop GIS users using QGIS or ArcMap or, more frequently, server or client-side programs that are rendering maps for clients of their own. 
 
-Start up your geoserver docker container, sharing on port 8080. You will need to make sure docker is running and the `kartoza/geoserver-2.15.2` container is running as in the previous lab. In the docs, the command is listed as:
-
-```
-docker run -v $HOME/geoserver-data:/opt/geoserver/data_dir -p 8080:8080 kartoza/geoserver:2.15.2
-```
-but your exact location of the the `data directory` may differ. If you get a message like `docker: Error response from daemon: Conflict. The container name "/geoserver" is already in use by container` then you likely already have it running.
-
-
 In the left-hand geoserver menu, find `Demos` near the bottom. In the page that comes up, a number OGC demo requests are available for viewing and interacting with. We just want the WMS GetCapabilities to start with. 
-
 
 In the drop-down menu, find `WMS_getCapabilities.url`.
 ![image16.png](screenshots/image16.png)
