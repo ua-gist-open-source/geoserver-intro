@@ -5,10 +5,14 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - /workspaces/geoserver-intro/geoserver_data/data_dir:/opt/geoserver/data_dir
+      - type: volume
+        source: geoserver_data_volume
+        target: /opt/geoserver/data_dir
     environment:
       - GEOSERVER_ADMIN_USER=admin
       - GEOSERVER_ADMIN_PASSWORD=geoserver
       - SAMPLE_DATA=true
       - HTTP_PROXY_NAME=${CODESPACE_NAME}-8080.preview.app.github.dev
       - HTTP_SCHEME=https
+volumes:
+  geoserver_data_volume:
