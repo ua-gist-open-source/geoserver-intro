@@ -13,6 +13,7 @@ services:
       - GEOSERVER_ADMIN_PASSWORD=geoserver
       - SAMPLE_DATA=true
       - HTTP_PROXY_NAME=${CODESPACE_NAME}-8080.app.github.dev
+      - HTTP_PROXY_PORT=443
       - HTTP_SCHEME=https
 volumes:
   geoserver_data_volume:
