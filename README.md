@@ -43,13 +43,9 @@ At this point, geoserver is running in docker _inside your codespace!_. This is 
 
 Click on the the little globe icon under `Local Address` to `Open in Browser`. If everything is working well, this is what you should see:
 
-![capache-tomcat-home](./media/apache-tomcat-home.png)
+![geoserver-browser](./media/geoserver-browser.png)
 
-Congratulations! It's working! But that's not really geoserver. Add the following to the url in your browser: `/geoserver/web`.
-
-For my example, given my `Local Address` (which will be different than yours):
-- Local Address: `https://aaryno-solid-space-fiesta-5gqvgxvpjj4hj4r.github.dev/` 
-- With geoserver url: `https://aaryno-solid-space-fiesta-5gqvgxvpjj4hj4r.github.dev/geoserver/web`
+Congratulations! It's working!
 
 ### Instructions
 #### Connecting to geoserver with WMS
