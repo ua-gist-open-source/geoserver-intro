@@ -51,10 +51,8 @@ Congratulations! It's working!
 #### Connecting to geoserver with WMS
 To get a jump start on using geoserver, it will be helpful to peek under the hood at the OGC requests that are the heart of all interactions between geoserver and clients. By clients, these usually refer to desktop GIS users using QGIS or ArcMap or, more frequently, server or client-side programs that are rendering maps for clients of their own. 
 
-In the left-hand geoserver menu, find `Demos` near the bottom. In the page that comes up, a number OGC demo requests are available for viewing and interacting with. We just want the WMS GetCapabilities to start with. 
-
-In the drop-down menu, find `WMS_getCapabilities.url`.
-![image16.png](./media/image16.png)
+From the Welcome page, find the `WMS 1.3.0` box. Right click on the `1.3.0` link and copy the URL. 
+![getCapabilities_link.png](./media/getCapabilities_link.png)
 
 Note the URL. 
 #### Q1: What is the URL of the WMS GetCapabilities request?
